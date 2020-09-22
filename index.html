@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        /*--- center A B C -- */
+
+        .flex-container-a-b-c {
+            display: flex;
+            background-color: #f1f1f1;
+            justify-content: space-between;
+            margin-top: 48px;
+        }
+
+        .flex-container-a-b-c .flex-box {
+            font-size: 24px;
+            padding: 24px 28px;
+            text-align: center;
+            color: white;
+            margin: 12px;
+        }
+
+        .flex-container-a-b-c .flex-box:nth-child(1) {
+            background: #96CAEF;
+        }
+
+        .flex-container-a-b-c .flex-box:nth-child(2) {
+            background: #8DE4AF;
+        }
+
+        .flex-container-a-b-c .flex-box:nth-child(3) {
+            background: #E7717D;
+        }
+
+
+        /*---Random A BC --*/
+
+        .flex-container-a-bc {
+            display: flex;
+            background-color: #f1f1f1;
+            justify-content: flex-end;
+            margin-top: 48px;
+        }
+
+        .flex-container-a-bc .flex-box {
+            font-size: 24px;
+            padding: 24px 28px;
+            text-align: center;
+            color: white;
+            margin: 12px;
+        }
+
+        .flex-container-a-bc .flex-box:nth-child(1) {
+            background: #96CAEF;
+            margin-right: auto;
+        }
+
+        .flex-container-a-bc .flex-box:nth-child(2) {
+            background: #8DE4AF;
+        }
+
+        .flex-container-a-bc .flex-box:nth-child(3) {
+            background: #E7717D;
+        }
+
+
+
+        /*---Random C AB --*/
+
+        .flex-container-c-ab {
+            display: flex;
+            background-color: #f1f1f1;
+            justify-content: flex-end;
+            margin-top: 48px;
+        }
+
+        .flex-container-c-ab .flex-box {
+            font-size: 24px;
+            padding: 24px 28px;
+            text-align: center;
+            color: white;
+            margin: 12px;
+        }
+
+        .flex-container-c-ab .flex-box:nth-child(1) {
+            background: #96CAEF;
+            order: 2;
+        }
+
+        .flex-container-c-ab .flex-box:nth-child(2) {
+            background: #8DE4AF;
+            order: 3;
+        }
+
+        .flex-container-c-ab .flex-box:nth-child(3) {
+            background: #E7717D;
+            order: 1;
+            margin-right: auto;
+        }
+    </style>
+</head>
+
+
+<body>
+    <!--- center A B C -->
+    <div class="flex-container-a-b-c">
+        <div class="flex-box"> A </div>
+        <div class="flex-box"> B </div>
+        <div class="flex-box"> C </div>
+    </div>
+
+    <!---Random A BC -->
+    <div class="flex-container-a-bc">
+        <div class="flex-box"> A </div>
+        <div class="flex-box"> B </div>
+        <div class="flex-box"> C </div>
+    </div>
+
+
+    <!---Random C AB -->
+    <div class="flex-container-c-ab">
+        <div class="flex-box"> A </div>
+        <div class="flex-box"> B </div>
+        <div class="flex-box"> C </div>
+    </div>
+</body>
+
+</html>
